@@ -18,6 +18,7 @@ class Server {
   Routers() {
     this.app.use("/api/user", userRouter);
     this.app.use("/api/article",articleRouter)
+    this.app.use("/api/health",userRouter)
   }
 
   config() {

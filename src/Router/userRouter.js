@@ -10,6 +10,15 @@ class UserRouter{
     constructor(){
        this.postRouter()
        this.patchRouter()
+       this.getRouter()
+    }
+    getRouter(){
+        this.router.get('/',(req,res,next)=>{
+            res.send({
+                app:"Sploot",
+                status:"UP"
+            })
+        })
     }
 
     postRouter(){
